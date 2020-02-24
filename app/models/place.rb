@@ -4,5 +4,5 @@ class Place < ApplicationRecord
   validates :city, presence: true
   validates :price, presence: true
   validates :address, presence: true
-  validates :category, :inclusion => { :in ['habitation', 'industriel', 'exterieur', 'culturel']}
+  validates :category, :inclusion => { in: ['habitation', 'industriel', 'exterieur', 'culturel']}
 end
