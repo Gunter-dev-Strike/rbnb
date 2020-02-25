@@ -10,7 +10,8 @@
 @import "font-awesome";
 
 // Your CSS partials
-@import "components/index";
+@import "components/*";
 @import "pages/index";
+@import "bootstrap"
 @import "components/*";
 
