@@ -8,6 +8,7 @@ gem 'puma'
 gem 'rails', '6.0.2.1'
 gem 'redis'
 gem 'devise'
+gem 'bootstrap'
 
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.6.1'
