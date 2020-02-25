@@ -10,7 +10,7 @@ h1 {
   font-family : "Raleway";
   font-size: 40px;
   font-weight: 700 !important;
-  color: #204282;
+  color: var(--bleu);
   line-height: 1.2;
 }
 
@@ -18,7 +18,7 @@ body {
   font-family : "Roboto";
   font-size: 1em;
   font-weight: 300;
-  color: #434655 !important;
+  color: var(--gris) !important;
   line-height: 1.2;
 }
 
