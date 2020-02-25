@@ -70,16 +70,16 @@
 .btn  {
   width: 442px;
   border-radius: 10px;
-  background-color: #FF8273;
+  background-color: #FF8273 !important;
   border-style: none !important;
-  color: white;
+  color: white !important;
   height: 50px;
   margin-top: 23px;
-  line-height: 2.5;
+  line-height: 2.5 !important;
 }
 
 .btn:hover {
-    color: #204282;
+    color: #204282 !important;
     text-decoration: none;
 }
 
