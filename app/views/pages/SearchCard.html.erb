@@ -1,0 +1,10 @@
+<div class="container">
+ <%= simple_form_for :search, url: root_path, method: :get do |f| %>
+  <div class="search-form-control form-group">
+     <%= f.input :ville, placeholder: 'Ville', label:false %>
+      <%= f.input :category, placeholder: 'Catégorie', label:false %>
+       <%= f.input :pxmax, placeholder: 'Prix max', label:false %>
+         <%= link_to "Rechercher", "#", class: "btn btn-flat" %>
+  </div>
+</div>
+<% end %>
