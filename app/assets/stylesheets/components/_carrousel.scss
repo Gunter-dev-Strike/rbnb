@@ -1,6 +1,12 @@
+.row-carrousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #carrousel1, #carrousel2, #carrousel3 {
   border-radius: 16px;
-  // margin-left: 30px;
+justify-content: flex-center;
 
 }
 
