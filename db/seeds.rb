@@ -14,8 +14,6 @@ Place.destroy_all
 User.destroy_all
 
 
-
-
 user1 = User.create!(username: 'Luke', email: 'toto@toto.com', password: 'Petaouchnok' )
 user2 = User.create!(username: 'Lake', email: 'tata@tata.com', password: 'Petaouchnok' )
 user3 = User.create!(username: 'Like', email: 'titi@titi.com', password: 'Petaouchnok' )

@@ -1,3 +1,16 @@
+
+.cards a {
+  color: var(--corail);
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.cards a:hover {
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+}
+
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

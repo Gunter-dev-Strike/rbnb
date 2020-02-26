@@ -1,7 +1,7 @@
-<h1>Places#index</h1>
-<p>Find me in app/views/places/index.html.erb</p>
 
-<h1>All places</h1>
+
+<h1>Les annonces :</h1>
+<br>
 <% if @places.nil? %>
 <p> No places yet, search again</p>
 <% else %>
@@ -10,12 +10,15 @@
   <% @places.each do |place| %>
   <div class="card-category" style="background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0,0,0,0.3)), url(https://picsum.photos/seed/picsum/200/300)">
     <p> <%= place.name %> <br>
-    <%= place.city %>
+      <%= place.city %> <br>
+      <%= link_to '+', place %>
+
+    </div>
+    <% end %>
   </div>
   <% end %>
-</div>
-<% end %>
+
 
 
 <!-- Demain on utilisera active storage pour les photos
-url(<pe> image_path place.photos.first </pe> ) -->
+  url(<pe> image_path place.photos.first </pe> ) -->
