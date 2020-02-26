@@ -12,7 +12,15 @@
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
+
+    <%= render 'pages/navbar'  %>
+
+  <div class="container">
+
     <%= yield %>
+    </div>
+
+    <%= render 'pages/footer'  %>
 
     <%= javascript_pack_tag 'application' %>
 
