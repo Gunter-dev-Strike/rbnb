@@ -15,8 +15,13 @@
   </head>
 
   <body>
- <%= render 'pages/navbar' %>
+
+    <%= render 'pages/navbar'  %>
+
     <%= yield %>
+    </div>
+
+    <%= render 'pages/footer'  %>
 
     <%= javascript_pack_tag 'application' %>
 
