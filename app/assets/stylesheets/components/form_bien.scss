@@ -1,0 +1,20 @@
+.main-cont{
+  max-width: 1140px;
+  margin: 0 auto;
+
+}
+
+.container-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-group:last-child {
+  color: #FF8273;
+}
+
+.search-form-control {
+  width: 100% !important;
+  border-radius: 10px;
+}

@@ -6,7 +6,7 @@ class PlacesController < ApplicationController
 
   def new
     @place = Place.new
-    redirect_to place_path(@place)
+    # redirect_to place_path(@place)
   end
 
   def show
