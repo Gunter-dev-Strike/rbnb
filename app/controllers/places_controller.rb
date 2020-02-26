@@ -1,12 +1,11 @@
 class PlacesController < ApplicationController
 
   def index
-    @place = Place.all
+    @places = Place.all
   end
 
   def new
     @place = Place.new
-    redirect_to place_path(@place)
   end
 
   def show
@@ -36,7 +35,7 @@ class PlacesController < ApplicationController
 
 private
   def place_params
-    params.require(:place).permit(:category, :city, :price, :adress)
+    params.require(:place).permit(:category, :city, :price, :adress, photos: [])
   end
 
 end
