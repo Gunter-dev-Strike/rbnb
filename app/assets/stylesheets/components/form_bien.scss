@@ -18,3 +18,27 @@
   width: 100% !important;
   border-radius: 10px;
 }
+
+.btn-form {
+  float: right;
+  margin-bottom: 2em;
+  border-radius: 5px;
+}
+
+.btn-form:hover {
+  background-color: var(--bleu) !important;
+  color: white !important;
+}
+
+
+.btn-form-rent {
+  background-color: var(--bleu) !important;
+  float: right;
+  margin-bottom: 2em;
+  border-radius: 5px;
+}
+
+.btn-form-rent:hover {
+  background-color: var(--corail) !important;
+  color: white !important;
+}
