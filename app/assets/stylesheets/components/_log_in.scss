@@ -1,0 +1,56 @@
+.log_container {
+  display: flex;
+  justify-content: center;
+}
+
+.log_content_container {
+  border-radius: 50px;
+  border-color: black;
+  border-color: #204282;
+  border-style: solid;
+  padding: 45px;
+  padding-block: 75px;
+  padding-top: 78px;
+  margin-top: 12px;
+}
+
+.h2_log_in {
+  display: flex;
+  justify-content: center;
+  color: #204282;
+}
+
+.form-check-label {
+color: #204282 !important;
+}
+
+#user_username {
+  border-radius: 12px;
+  padding-block: 26px;
+}
+
+#user_email{
+  border-radius: 12px;
+  padding-block: 26px;
+}
+
+#user_password {
+  border-radius: 12px;
+  padding-block: 26px;
+}
+
+.btn.btn_log_in {
+  width: 442px;
+  border-radius: 10px;
+  background-color: #204282 !important;
+  border-style: none !important;
+  color: white !important;
+  height: 50px;
+  margin-top: 23px;
+  line-height: 2.5 !important;
+}
+
+.btn.btn_log_in {
+    color: white !important;
+    text-decoration: none;
+}
