@@ -23,15 +23,15 @@
         <span class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Propriétaire</span>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
           <%= link_to "Ajouter un bien", new_place_path, class: "dropdown-item"%>
-          <%= link_to "Mes annonces", "#", class: "dropdown-item"%>
-          <%= link_to "Mes réservations", "#", class: "dropdown-item"%>
+          <%= link_to "Mes annonces", pages_my_places_path, class: "dropdown-item"%>
+          <%= link_to "Mes réservations", pages_my_bookings_path, class: "dropdown-item"%>
         </div>
       </li>
       <li class="nav-item">
         <%= link_to "Les annonces", places_path, class: "nav-link"%>
       </li>
       <li class="nav-item">
-        <%= link_to "Connexion", new_user_registration_path, class: "nav-link" %>
+        <%= link_to "Connexion", new_user_session_path, class: "nav-link" %>
       </li>
       <li>
         <img class="avatar" src="https://kitt.lewagon.com/placeholder/users/ssaunier" />
