@@ -1,0 +1,43 @@
+.sign_container {
+  display: flex;
+  justify-content: center;
+
+}
+
+.content_container {
+ border-radius: 50px;
+  border-color: black;
+  border-color: #FF8273;
+  border-style: solid;
+  padding: 45px;
+  padding-block: 75px;
+  padding-top: 78px;
+  margin-top: 12px;
+}
+
+.alert {
+  position: absolute;
+  visibility: hidden;
+}
+
+.h2_sign_up {
+  display: flex;
+  justify-content: center;
+  color: #FF8273;
+}
+
+.btn  {
+  width: 442px;
+  border-radius: 10px;
+  background-color: #FF8273 !important;
+  border-style: none !important;
+  color: white !important;
+  height: 50px;
+  margin-top: 23px;
+  line-height: 2.5 !important;
+}
+
+.btn:hover {
+    color: #204282 !important;
+    text-decoration: none;
+}
