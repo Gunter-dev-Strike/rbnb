@@ -1,7 +1,19 @@
 class PlacesController < ApplicationController
 
   def index
-    @places = Place.all
+    # JS ecouter l'événement
+    @query = params[:search]
+   if params[:search].present?
+    if params[:search][:city].present?
+      @places = Place.where("city ILIKE ?", "%#{params[:search][:city]}%")
+    elsif params[:search][:category].present?
+      @places = Place.where("category ILIKE ?", "%#{params[:search][:category]}%")
+    elsif params[:search][:price].present?
+      @places = Place.where("price ILIKE ?", "%#{params[:search][:price]}%")
+      end
+      else
+        @places = Place.all
+      end
   end
 
   def new

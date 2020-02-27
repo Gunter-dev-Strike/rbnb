@@ -1,7 +1,7 @@
 
   <div class="search-container">
-    <form action="">
-      <input type="text" placeholder="Rechercher par ville" name="search">
+    <form method="get" action="/places" class=":search">
+      <input type="text" placeholder="Rechercher par ville" name="search[city]">
       <button type="submit"><i class="fa fa-search"></i></button>
     </form>
     <!-- <img src="avatar.png" alt="Avatar" class="avatar"> -->
@@ -14,12 +14,12 @@
 
     <div class="col">
       <div class="container-card">
-       <%= simple_form_for :search, url: root_path, method: :get do |f| %>
+       <%= simple_form_for :search, url: places_path, method: :get do |f| %>
        <div class="search-form-control form-group">
-         <%= f.input :ville, placeholder: 'Ville', label:false %>
+         <%= f.input :city, placeholder: 'Ville', label:false %>
          <%= f.input :category, placeholder: 'Catégorie', label:false %>
-         <%= f.input :pxmax, placeholder: 'Prix max', label:false %>
-         <%= link_to "Rechercher", "#", class: "btn btn-flat" %>
+         <%= f.input :price, placeholder: 'Prix max', label:false %>
+         <%= f.button :submit, "Rechercher",class:'btn_log_in' %>
        </div>
      </div>
      <% end %>
