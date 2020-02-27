@@ -1,0 +1,5 @@
+<% if current_user.bookings %>
+ <% current_user.places.each do |place| %>
+    <p><%= place %></p>
+    <% end %>
+<% end %>
