@@ -9,4 +9,10 @@ class Place < ApplicationRecord
   validates :price, presence: true
   validates :address, presence: true
   validates :category, inclusion: { in: ['habitation', 'industriel', 'exterieur', 'culturel']}
+  include PgSearch::Model
+  pg_search_scope :search_places_all,
+                  against: %i[city category price],
+                  using: {
+                    tsearch: { prefix: true }
+                  }
 end
