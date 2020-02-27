@@ -8,7 +8,7 @@
 
 <div class="cards">
   <% @places.each do |place| %>
-  <div class="card-category" style="background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0,0,0,0.3)), url(https://picsum.photos/seed/picsum/200/300)">
+  <div class="card-category" style="background-image: url(<%= place.photos.first.nil? ? 'https://cdn.pixabay.com/photo/2017/09/17/18/15/lost-places-2759275_1280.jpg' : cl_image_path(place.photos.first.key) %>)">
     <p> <%= place.name %> <br>
       <%= place.city %> <br>
       <%= link_to '+', place %>
@@ -17,6 +17,7 @@
     <% end %>
   </div>
   <% end %>
+
 
 
 
