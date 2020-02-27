@@ -1,95 +1,65 @@
-* {box-sizing: border-box;}
-
-body {
-  margin: 0;
-  font-family: Raleway, Roboto;
-}
-
-.topnav {
-  overflow: hidden;
-  background-color: #FF8273;
-  margin-bottom: 3em;
-}
-
-.topnav span {
-  font-family: Raleway;
-  float: left;
-  display: block;
-  color: #204282;
+#main-title {
+  font-size: 24px;
   font-weight: bold;
+  color: var(--bleu);
+  line-height: 1.2;
+}
+
+
+
+.nav-item a {
+  color: white !important;
+}
+
+.dropdown-menu-right a {
+  color: var(--corail)!important;
+}
+
+.nav-item span {
+  color: white !important;
+}
+.nav-link:hover {
+  font-weight:bold;
+}
+
+.navbar {
+  justify-content: space-between;
+  background: #FF8273;
+  font-family: Raleway;
+  font-size: 20px;
   text-transform: uppercase;
+}
+
+.navbar .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar .navbar-brand img {
+  width: 40px;
+}
+
+ul li {
+  text-decoration: none;
   text-align: center;
   padding: 14px 40px 14px 10px;
   text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a {
-  float: right;
-  display: block;
   color: white;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
 }
 
-.topnav a:hover {
-  background-color: #FF8273;
-  color: white;
-  font-weight: bold;
-}
-
-.topnav a.active {
-  background-color: #FF8273;
-  color: white;
-  font-weight: bold;
-}
-
-.topnav .search-container {
+.search-container {
   float: left;
   text-align: center;
   border-radius: 30px;
 }
 
-.topnav input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
+.a:hover {
+  background-color: #FF8273;
+  color: white;
+  font-weight: bold;
 }
 
-.topnav .search-container button {
-  background-color: white;
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
-  border: #e0e0d1;
-  cursor: pointer;
-}
-
-.topnav .search-container button:hover {
-  background: white;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav .search-container {
-    float: none;
-  }
-  .topnav a, .topnav input[type=text], .topnav .search-container button {
-    float: none;
-    display: block;
-    background-color: white;
-    text-align: right;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  .topnav input[type=text] {
-    border: 1px solid #ccc;
-  }
+.a.active {
+  background-color: #FF8273;
+  color: white;
+  font-weight: bold;
 }

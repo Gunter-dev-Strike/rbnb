@@ -1,0 +1,44 @@
+.main-cont{
+  max-width: 1140px;
+  margin: 0 auto;
+
+}
+
+.container-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-group:last-child {
+  color: #FF8273;
+}
+
+.search-form-control {
+  width: 100% !important;
+  border-radius: 10px;
+}
+
+.btn-form {
+  float: right;
+  margin-bottom: 2em;
+  border-radius: 5px;
+}
+
+.btn-form:hover {
+  background-color: var(--bleu) !important;
+  color: white !important;
+}
+
+
+.btn-form-rent {
+  background-color: var(--bleu) !important;
+  float: right;
+  margin-bottom: 2em;
+  border-radius: 5px;
+}
+
+.btn-form-rent:hover {
+  background-color: var(--corail) !important;
+  color: white !important;
+}
