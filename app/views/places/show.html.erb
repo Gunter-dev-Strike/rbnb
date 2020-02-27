@@ -6,8 +6,7 @@
 
     </div>
 
-    <div class="gallery" id="gallery">
-
+   <div class="gallery" id="gallery">
       <div class="mb-3 pics animation all 2">
         <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" alt="Card image cap">
       </div>
@@ -34,7 +33,7 @@
 
     </div>
 
-      </div>
+  </div>
 
   <div class="place-container-infos">
 
@@ -45,6 +44,7 @@
       <p><b>Addresse :  <%= @place.address  %></b></p>
       <p><b>Description :  <%= @place.description  %></b></p>
       <h3><%= @place.price %>€/jour</h3>
+
       <div class="btnandprice">
         <%= link_to "Reserver", bookings_new_path, class: "btn-rent" %>
 
@@ -63,6 +63,8 @@
   </div>
 
   <div class="map-container" style="margin-bottom: 2em;">
+   <img id="map" src='https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/6.1167,45.9,10.45,0,0/1100x500?access_token=pk.eyJ1IjoiYW1hdml0aSIsImEiOiJjazZjNm1ibmkweHpkM2VtZ3d0eXlwdnB2In0.1uUjMSkHITsRbU_aC3f97g'>
+ </div>
     <div
     id="map"
     style="width: 100%;
@@ -71,5 +73,4 @@
     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
     ></div>
   </div>
-
 </div>
