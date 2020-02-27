@@ -1,4 +1,5 @@
 class Place < ApplicationRecord
+  geocoded_by :address
   has_many_attached :photos
   belongs_to :owner, class_name: 'User', foreign_key: 'user_id' #belongs to owner, association
   validates :name, presence: true
@@ -9,10 +10,13 @@ class Place < ApplicationRecord
   validates :price, presence: true
   validates :address, presence: true
   validates :category, inclusion: { in: ['habitation', 'industriel', 'exterieur', 'culturel']}
+
   include PgSearch::Model
   pg_search_scope :search_places_all,
                   against: %i[city category price],
                   using: {
                     tsearch: { prefix: true }
                   }
+  after_validation :geocode, if: :will_save_change_to_address?
+
 end

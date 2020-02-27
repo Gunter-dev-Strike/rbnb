@@ -25,6 +25,14 @@ class PlacesController < ApplicationController
 
   def show
   @place = Place.find(params[:id])
+  @marker = Place.near(@place.address, 0.5, units: :km)
+
+    @markers = @marker.map do |place|
+      {
+        lat: place.latitude,
+        lng: place.longitude
+      }
+    end
   end
 
   def edit
@@ -45,6 +53,10 @@ class PlacesController < ApplicationController
     @place = Place.find(params[:id])
     @place.destroy
     redirect_to places_path
+  end
+
+  def geomap
+
   end
 
 
