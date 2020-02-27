@@ -1,0 +1,16 @@
+
+
+<h1>Mes annonces :</h1>
+<br>
+
+<div class="cards">
+  <% @bookings.each do |booking| %>
+  <div class="card-category" style="background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0,0,0,0.3)), url(https://picsum.photos/seed/picsum/200/300)">
+    <p> <%= place.name %> <br>
+      <%= place.city %> <br>
+      <%= link_to '+', place %>
+
+    </div>
+    <% end %>
+  </div>
+  <% end %>
