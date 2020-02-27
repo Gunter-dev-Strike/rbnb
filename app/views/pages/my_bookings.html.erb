@@ -1,0 +1,5 @@
+<% if current_user.bookings %>
+ <% current_user.bookings.each do |booking| %>
+    <p><%= booking.date%></p>
+    <% end %>
+<% end %>

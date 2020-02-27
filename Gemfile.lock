@@ -94,6 +94,7 @@ GEM
     ffi (1.12.2)
     font-awesome-sass (5.6.1)
       sassc (>= 1.11)
+    geocoder (1.6.1)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     http-accept (1.7.0)
@@ -128,6 +129,9 @@ GEM
       mini_portile2 (~> 2.4.0)
     orm_adapter (0.5.0)
     pg (0.21.0)
+    pg_search (2.3.2)
+      activerecord (>= 5.2)
+      activesupport (>= 5.2)
     popper_js (1.16.0)
     pry (0.12.2)
       coderay (~> 1.1.0)
@@ -243,9 +247,11 @@ DEPENDENCIES
   dotenv-rails
   faker
   font-awesome-sass (~> 5.6.1)
+  geocoder
   jbuilder (~> 2.0)
   listen (~> 3.0.5)
   pg (~> 0.21)
+  pg_search (~> 2.3.0)
   pry-byebug
   pry-rails
   puma
