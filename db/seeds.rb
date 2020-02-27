@@ -23,7 +23,7 @@ place2 = Place.create!(category: 'habitation', name: "Loft à Montmartre", descr
 place3 = Place.create!(category: 'culturel', name: "Théâtre Nô", description: "Blablablablablabla", city: 'Lyon', owner: user2, price: 100, address: '4 Rue Charles Dullin, 69002 Lyon', options: ["Restauration", "Groupe Electro", "Autorisations", "Ménage", "Fumeur", "Wifi", "WC", "Accessibilité Handicapé"])
 place4 = Place.create!(category: 'exterieur', name: "Jardin des plantes", description: "Blablablablablabla", city: 'Lyon', owner: user1, price: 100, address: '73 Montée de la Grande-Côte, 69001 Lyon', options: ["Restauration", "Groupe Electro", "Autorisations", "Ménage", "Fumeur", "Wifi", "WC", "Accessibilité Handicapé"])
 place5 = Place.create!(category: 'industriel', name: "Weirdo Space", description: "Blablablablablabla", city: 'Lyon', owner: user1, price: 100, address: '86 Quai Perrache, 69002 Lyon', options: ["Restauration", "Groupe Electro", "Autorisations", "Ménage", "Fumeur", "Wifi", "WC", "Accessibilité Handicapé"])
-place6 = Place.create!(category: 'habitation', name: "Maison de campagne", description: "Blablablablablabla", city: 'Paris', owner: user1, price: 100, address: '14 Rue Dr Edmond Locard, 69005 Lyon', options: ["Restauration", "Groupe Electro", "Autorisations", "Ménage", "Fumeur", "Wifi", "WC", "Accessibilité Handicapé"])
+place6 = Place.create!(category: 'habitation', name: "Maison de campagne", description: "Blablablablablabla", city: 'Lyon', owner: user1, price: 100, address: '14 Rue Dr Edmond Locard, 69005 Lyon', options: ["Restauration", "Groupe Electro", "Autorisations", "Ménage", "Fumeur", "Wifi", "WC", "Accessibilité Handicapé"])
 
 
 booking1 = Booking.create!(user: user1, date: '22/02/2022', place: place3)
@@ -31,6 +31,3 @@ booking2 = Booking.create!(user: user3, date: '02/02/2020', place: place1)
 # User.all.each do |user|
 #   p user.username
 #   end
-
-
-
