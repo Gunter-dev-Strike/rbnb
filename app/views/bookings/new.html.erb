@@ -1,16 +1,15 @@
 <div class="main-cont">
   <h3 style="color: var(--corail) !important;">RESERVER UN BIEN</h3>
   <br>
- <div class="container-form">
-   <%= simple_form_for :search, url: root_path, method: :get do |f| %>
+  <p><%= @place.name %></p>
+  <div class="container-form">
+    <%= simple_form_for([@place, @booking]) do |f| %>
     <div class="form-group">
-       <%= f.input :username, placeholder: 'Toto', label:'Votre Nom' %>
-        <%= f.input :email, placeholder: 'toto@gmail.com', label:'Votre email' %>
-         <%= f.input :date, placeholder: 'jour/mois/année', label:'Vos dates'%>
-            <%= f.input :message, placeholder: 'Message', label:'Votre message' %>
-              <%= link_to "Envoyer", "mailto:laura.lauret.milazzo@gmail.com", class: "btn btn-flat btn-form-rent" %>
+      <%= f.input :date, placeholder: 'jour/mois/année', label:'Vos dates', as: :date%>
+      <%= f.input :message, placeholder: 'Message', label:'Votre message' %>
+      <%= f.submit "Réserver", class: "btn btn-flat btn-form-rent" %>
     </div>
+    <% end %>
   </div>
-  <% end %>
 </div>
 

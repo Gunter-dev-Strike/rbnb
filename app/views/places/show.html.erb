@@ -46,7 +46,7 @@
       <h3><%= @place.price %>€/jour</h3>
 
       <div class="btnandprice">
-        <%= link_to "Reserver", bookings_new_path, class: "btn-rent" %>
+        <%= link_to "Reserver", new_place_booking_path(@place), class: "btn-rent" %>
 
       </div>
     </div>
