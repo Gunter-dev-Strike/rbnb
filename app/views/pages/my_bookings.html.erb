@@ -1,5 +1,16 @@
+<h1>Mes réservations</h1>
+<br>
+
 <% if current_user.bookings %>
  <% current_user.bookings.each do |booking| %>
-    <p><%= booking.date%></p>
+    <p style="font-size: 24px"><%= booking.place.name%></p>
+    <p><%= booking.message%></p>
+    <p style="font-family: 'Raleway'; color: var(--bleu); font-weight: 600;"><%= booking.date%></p>
+    <hr>
+    <br>
     <% end %>
 <% end %>
+
+<div id="my-bookings">
+<br>
+</div>
