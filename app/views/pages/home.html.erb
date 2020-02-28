@@ -6,7 +6,7 @@
        <%= simple_form_for :search, url: places_path, method: :get do |f| %>
        <div class="search-form-control form-group">
          <%= f.input :city, placeholder: 'Ville', label:false %>
-         <%= f.input :category, placeholder: 'Catégorie', label:false %>
+         <%= f.input :options, label: false, collection: ['habitation', 'exterieur', 'industriel', 'culturel'], input_html: { class: 'home' } %>
          <%= f.input :price, placeholder: 'Prix max', label:false %>
          <%= f.button :submit, "Rechercher",class:'btn_log_in' %>
        </div>
