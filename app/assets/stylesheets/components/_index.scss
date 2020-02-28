@@ -3,6 +3,27 @@
 @import "avatar";
 @import "navbar";
 
+
+html, body {
+  height: 100%;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.container{
+flex: 1 0 auto;
+}
+
+.footer{
+ flex-shrink: 0;
+}
+
+
+
 .row {
   margin-top: 3em;
   margin-bottom: 3em;
@@ -15,11 +36,4 @@
   vertical-align: center;
 }
 
-#my-bookings{
-  margin-bottom: 11em;
-}
 
-
-#mes-annonces{
-  margin-bottom: 11em;
-}
