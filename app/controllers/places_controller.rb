@@ -18,9 +18,6 @@ class PlacesController < ApplicationController
 
   def new
     @place = Place.new
-
-    # redirect_to place_path(@place)
-
   end
 
   def show
@@ -45,16 +42,17 @@ class PlacesController < ApplicationController
   end
 
   def create
-    p "je suis la"
-    p ENV['CLOUDINARY_URL']
     @place = Place.new(place_params)
     @place.owner = current_user
-    @place.price = 30
-    @place.category = 'industriel'
 
 
-    @place.save
-    redirect_to place_path(@place)
+
+    @place.options.reject!(&:blank?)
+    if @place.save
+      redirect_to place_path(@place)
+    else
+      render :new
+    end
   end
 
   def destroy
@@ -63,11 +61,9 @@ class PlacesController < ApplicationController
     redirect_to places_path
   end
 
-
-
 private
 
   def place_params
-    params.require(:place).permit(:name, :address, :city, :description, :options, photos: [])
+    params.require(:place).permit(:name, :category, :price, :address, :city, :description, options: [], photos: [])
   end
 end

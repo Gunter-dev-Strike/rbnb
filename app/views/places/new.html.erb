@@ -2,15 +2,16 @@
   <h3>AJOUTER UN BIEN</h3>
   <br>
  <div class="container-form">
+
    <%= simple_form_for(@place) do |f| %>  <!-- #doit pouvoir add un bien  -->
     <div class="form-group">
       <%= f.input :name, placeholder: 'Chateau de Chambord', label:'Donner un nom à votre lieu', class: "opacity-placeholder"%>
       <%= f.input :address, placeholder: '10 rue des mouettes', label:'Adresse' %>
       <%= f.input :city, placeholder: 'Annecy', label:'Ville' %>
-      <%= f.input :options, label: 'Catégorie', collection: ['habitation', 'exterieur', 'industriel', 'culturel'], input_html: { class: 'categorie' } %>
-      <%= f.input :description, placeholder: 'Décriver votre lieu et ses usages possibles', label:'Description' %>
-      <%= f.input :options, label: 'Options', collection: ['Restauration', 'Electricité', 'Autorisations', 'Ménage', 'Fumeur', 'Wifi', 'Piscine', 'WC', 'Accessibilité', 'Matériel Audiovisuel', 'Meublé'], input_html: { class: 'choices' } %>
-      <%= f.input :price, placeholder: 'Indiquer votre prix à la journée', label:'Prix' %>
+      <%= f.input :category, label: 'Catégorie', collection: ['habitation', 'exterieur', 'industriel', 'culturel'], input_html: { class: 'choices' }, include_blank: false %>
+      <%= f.input :description, placeholder: 'Décrivez votre lieu et ses usages possibles', label:'Description' %>
+      <%= f.input :options, label: 'Options', collection: ['Restauration', 'Electricité', 'Autorisations', 'Ménage', 'Fumeur', 'Wifi', 'Piscine', 'WC', 'Accessibilité', 'Matériel Audiovisuel', 'Meublé'], input_html: { class: 'choices', multiple: true }, include_blank: false %>
+      <%= f.input :price, placeholder: 'Indiquez votre prix à la journée', label:'Prix' %>
       <%= f.input :photos, as: :file, input_html: { multiple: true } %>
 
       <%= f.submit "Enregistrer", class: "btn btn-flat btn-form"  %>
