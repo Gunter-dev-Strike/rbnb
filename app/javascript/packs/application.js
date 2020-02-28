@@ -9,3 +9,5 @@ initMapbox();
 
 
 import "bootstrap";
+
+import "plugins/init_choices";
