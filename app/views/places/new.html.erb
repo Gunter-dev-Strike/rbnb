@@ -10,7 +10,11 @@
       <%= f.input :description, placeholder: 'Décriver votre lieu et ses usages possibles', label:'Description' %>
       <%= f.input :options, label:'Options' %>
       <%= f.input :photos, as: :file, input_html: { multiple: true } %>
+
       <%= f.submit "Enregistrer", class: "btn btn-flat btn-form"  %>
+
+      <%= link_to "Ajouter", class: "btn btn-flat btn-form"  %>
+
     </div>
   </div>
   <% end %>
