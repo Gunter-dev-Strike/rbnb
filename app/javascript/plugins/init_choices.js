@@ -1,9 +1,8 @@
 import Choices from 'choices.js';
 
-const elements = document.querySelector('.choices');
-const select_categorie = document.querySelector('.categorie');
-const home = document.querySelector('.choices');
+const elements = document.querySelectorAll('.choices');
 
-new Choices(elements);
-// new Categorie(select_categorie);
-// new Home(home);
+elements.forEach((elem) => {
+  console.log("je sui sla")
+  new Choices(elem);
+})
