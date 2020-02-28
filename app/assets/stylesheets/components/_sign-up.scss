@@ -11,12 +11,13 @@
   border-style: solid;
   padding: 45px;
   padding-block: 75px;
-  padding-top: 78px;
-  margin-top: 12px;
+  padding-top: 59px;
+  margin-top: 28px;
 }
 
-.sign_up_link {
-  color: #FF8273;
+.log_in_link {
+  color: #204282;
+  font-size: 19px;
 }
 
 .alert {
@@ -28,11 +29,15 @@
   display: flex;
   justify-content: center;
   color: #FF8273;
+  margin-top: 40px;
 }
 
+#user_password_confirmation {
+ border-radius: 10px;
+}
 .btn  {
   width: 442px;
-  border-radius: 10px;
+  border-radius: 10px !important;
   background-color: #FF8273 !important;
   border-style: none !important;
   color: white !important;

@@ -1,2 +1,12 @@
-<h1>Places#edit</h1>
-<p>Find me in app/views/places/edit.html.erb</p>
+<%=form_for @user, :html => { id: "edit_place", class: "place_edit"} do |f|%>
+      <%= f.input :name, placeholder: 'Chateau de Chambord', label:'Donner un nom à votre lieu' %>
+      <%= f.input :address, placeholder: '10 rue des mouettes', label:'Adresse' %>
+      <%= f.input :city, placeholder: 'Annecy', label:'Ville' %>
+      <%= f.input :description, placeholder: 'Décriver votre lieu et ses usages possibles', label:'Description' %>
+      <%= f.input :options, label:'Options' %>
+      <%= f.input :photos, as: :file, input_html: { multiple: true } %>
+      <% content_tag :button, :type => :submit, class: 'btn btn-primary' do %>
+       <%= link_to "Modifer", new_user_registration_path, class:'sign_up_link' %>
+    Update User
+  <% end %>
+<%end%>
